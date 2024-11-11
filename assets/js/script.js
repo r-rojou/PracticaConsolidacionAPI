@@ -170,7 +170,7 @@ const buscarPersonaje = (event)=>{
     event.preventDefault();
 
     const id = document.getElementById('busquedaJojo').value;
-    if(!id){
+    if(!id || id < 1 || id > 175){
         alert("Por favor, ingrese un número de 1 a 175");
         return
     }
