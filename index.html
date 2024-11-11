@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/css_bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="icon" href="./assets/img/icon.ico">
+    <title>API Jojos</title>
+  </head>
+  <body onload="asignarEventos()">
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-12 colorRojo" id="divPopulares">
+                <p>1-5</p>
+              </div>
+             </div>
+
+            <div class="row">
+              <div class="col-12 colorVerde" id="divJobros">
+                <p>6-11</p>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="col-12 colorAzul" id="divOtros">
+                  <p>12-17</p>
+                </div>
+              </div>
+             <br><br>
+
+              <form onsubmit="buscarPersonaje(event)">
+                <input type="number" id="busquedaJojo" name="busquedaJojo" placeholder="Escriba su número"> <br> <br>
+                
+                <button class="btn btn-dark"type="submit">Buscar</button>
+              </form>
+              <br><br>
+          </div>
+          <div id="listaJojos" style="border: solid; border-radius: 30px;border-color: lightgray; background-color: rgb(216, 255, 255);">
+
+          </div>
+        </div>
+
+        <div class="col-10"  style="width: 18rem;">
+          <div class="container">
+            <div class="row" id="contenedorCardSeleccionada">
+
+            </div>
+            <div class="row" id="contenedorCards">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    
+
+    <script src="./assets/js/js_bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

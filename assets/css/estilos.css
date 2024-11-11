@@ -1,0 +1,76 @@
+main{
+    padding-top: 20px;
+}
+
+.estilosCards{
+    display: inline-flex;
+}
+
+#contenedorCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+.card{
+    flex: 1 0 calc(33.333% - 10px);  
+    box-sizing: border-box;  
+    
+}
+
+.card img{
+    height: auto;
+    width: auto;
+}
+
+.colorRojo{
+    background-color: lightpink;
+}
+
+.colorRojo{
+    background-color: lightpink;
+   
+}
+
+
+.circuloRojo{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: lightsalmon;
+    display: inline-block;
+}
+
+.colorVerde{
+    background-color: lightgreen;   
+ 
+}
+
+.circuloVerde{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: lightgreen;
+    display: inline-block;
+}
+
+.colorAzul{
+    background-color: lightseagreen; 
+   
+}
+
+.circuloAzul{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: lightseagreen;
+    display: inline-block;
+}
+
+.circuloDefault{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    display: inline-block;
+}
